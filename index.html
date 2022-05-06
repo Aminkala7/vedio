@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>SOUND OF SILENCE
+  </title>
+</head>
+<body>
+  <div class="container">
+    <div class="navbar">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSWOL2o7g-V6TlLch_T8azAhvwyKhi_wTQf3g&usqp=CAU" class="logo">
+    
+<ul>
+  <li><a href="#">HOME</a></li>
+  <li><a href="#">ABOUT</a></li>
+  <li><a href="#">SPECIFICATION</a></li>
+  <li><a href="#">PRODUCT</a></li>
+  <li><a href="#">CONNECT</a></li>
+</ul>
+</div>
+
+ <div class="content">
+      <div class="left-col">
+        <h1>THE <br> SOUND <br>OF <br> SILENCE</h1>
+      </div>
+      <div class="right-col">
+        <p>CLICK HERE TO LISTEN</p>
+        <img src="media/logo77.png" id="icon">
+
+      </div>
+    </div>
+  </div>
+<audio id="mySong">
+  <source src="media/TIK TOK Sound of Silence By Disturbed.mp3" type="audio/mp3">
+</audio>
+<script>
+  var mySong = document.getElementById("mySong");
+  var icon = document.getElementById("icon");
+
+  icon.onclick = function(){
+    if(mySong.paused){
+        mySong.play();
+        icon.src = "https://image.flaticon.com/icons/png/512/91/91266.png";
+  } else{
+    mySong.pause();
+    icon.src = "media/logo77.png"
+  }
+}
+  
+</script>
+</body>
+</html>
